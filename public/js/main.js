@@ -14,6 +14,8 @@ let userButtons = document.querySelectorAll('.u-link'),
 
         let bioContent = `
             <p>${person.descript}</p>
+            <p>${person.Price}</p>
+            <p>${person.Link}</p>
         `;
 
         console.log(bioContent);
