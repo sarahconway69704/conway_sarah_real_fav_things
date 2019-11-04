@@ -3,14 +3,28 @@
 @import 'modules/_users';
 @import 'modules/_lightbox';
 
+
+@media screen and (max-width: 46.874em){
+h1 {
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.bio-info
+{
+    margin-top: 2em;
+    padding: 10px;
+}
+
 body {
     color: $main-color;
     background-color: $body-bg;
 }
 
-h1, h2, h3 { color: $heading-color }
 
-.panel { min-height: 80vh; }
+
+
 
 .panel:nth-child(odd) {
     background-color: salmon;
@@ -18,5 +32,5 @@ h1, h2, h3 { color: $heading-color }
 }
 
 #to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
-
+}
 @import 'modules/_footer'
