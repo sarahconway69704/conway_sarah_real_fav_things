@@ -8,6 +8,8 @@
 h1 {
     color: crimson;
     font-family: Arial, Helvetica, sans-serif;
+ 
+    text-align: center;
   
 }
 
@@ -15,6 +17,7 @@ h1 {
 {
     margin-top: 2em;
     padding: 10px;
+    margin-left: 1em;
 }
 
 body {
@@ -33,4 +36,78 @@ body {
 
 #to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
 }
+
+
+@media screen and (min-width: 46.874em) and (max-width: 64em){
+
+    h1 {
+        color: crimson;
+        font-family: Arial, Helvetica, sans-serif;
+     
+        text-align: center;
+      
+    }
+    
+    .bio-info
+    {
+        margin-top: 2em;
+        padding: 10px;
+        margin-left: 1em;
+    }
+    
+    body {
+        color: $main-color;
+        background-color: $body-bg;
+    }
+    
+    
+    
+    
+    
+    .panel:nth-child(odd) {
+        background-color: salmon;
+        color: white;
+    }
+    
+    #to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
+    
+
+}
+
+@media screen and (min-width: 64em){
+    h1 {
+        color: crimson;
+        font-family: Arial, Helvetica, sans-serif;
+     
+        text-align: center;
+      
+    }
+    
+    .bio-info
+    {
+        margin-top: 2em;
+        padding: 10px;
+        margin-left: 1em;
+    }
+    
+    body {
+        color: $main-color;
+        background-color: $body-bg;
+    }
+    
+    
+    
+    
+    
+    .panel:nth-child(odd) {
+        background-color: salmon;
+        color: white;
+    }
+    
+    #to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
+    
+
+}
+
+
 @import 'modules/_footer'
