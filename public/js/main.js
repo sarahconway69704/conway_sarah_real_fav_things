@@ -32,7 +32,7 @@ let userButtons = document.querySelectorAll('.u-link'),
         //debugger;
         //find the image closest to the anchor tag and get its src property
         let imgSrc = this.previousElementSibling.getAttribute('src');
-        let url = `/${this.getAttribute('href')}`; // /1
+        let url = `/users/${this.getAttribute('href')}`; // /1
 
         fetch(url) // go get the data
             .then(res => res.json()) // parse the json results into a plain object
@@ -52,7 +52,7 @@ let userButtons = document.querySelectorAll('.u-link'),
 
     userButtons.forEach(button => button.addEventListener('click', getUserData));
     lightbox.querySelector('.close').addEventListener('click', function() {
-        lightbox.classList.remove('slow-lb');
+        lightbox.classList.remove('show-lb');
     });
 
 })();

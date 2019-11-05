@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
     })
 })
 
-router.get('/:id', (req, res) => {
+router.get('/users/:id', (req, res) => {
     console.log('at the user route');
     console.log(req.params.id);
 
